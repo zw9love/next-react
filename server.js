@@ -49,10 +49,10 @@ const devProxy = {
 }
 
 const port = parseInt(process.env.PORT, 10) || 3000
-// const env = process.env.NODE_ENV
-// const dev = env !== 'production'
-const env = 'dev'
-const dev = true
+const env = process.env.NODE_ENV
+const dev = env !== 'production'
+// const env = 'dev'
+// const dev = true
 const app = next({
     dir: '.', // base directory where everything is, could move to src later
     dev
@@ -67,6 +67,7 @@ app
         server = express()
 
         // Set up the proxy.
+        // 现在是只有开发模式才跨域。如果后台不用node的话，实际线上也得跨域。
         if (dev && devProxy) {
             const proxyMiddleware = require('http-proxy-middleware')
             Object.keys(devProxy).forEach(function (context) {

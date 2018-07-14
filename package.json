@@ -8,7 +8,7 @@
     "generate": "next generate",
     "export": "next build && next export",
     "node-dev": "node server.js",
-    "node-start": "NODE_ENV=production node server.js"
+    "node-start": "cross-env NODE_ENV=production PORT=3000 node server.js"
   },
   "dependencies": {
     "@zeit/next-css": "^0.2.0",
