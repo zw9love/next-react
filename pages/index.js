@@ -56,14 +56,15 @@ export default class Index extends Component {
         //     }
         // });
 
-        const {data} = await axios.get('/test.php', {});
+        const {data} = await axios.get('/api/test.php', {});
         return {}
     }
 
 
     async componentDidMount() {
         this.renderData();
-        // const {data} = await axios.get('/test.php', {})
+        const {data} = await axios.get('/api/test.php', {})
+        console.log(data)
     }
 
     renderData() {

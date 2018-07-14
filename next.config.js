@@ -6,7 +6,7 @@ module.exports = withCSS({
     cssModules: true,
     cssLoaderOptions: {
         importLoaders: 1,
-        localIdentName: "[local]___[hash:base64:15]",
+        localIdentName: "[local]___[hash:base64:5]",
     },
     // exportPathMap: function(defaultPathMap) {
     //     return {
@@ -34,19 +34,6 @@ module.exports = withCSS({
         // Important: return the modified config
         return config
     },
-    // axios: {
-    //     prefix: '/api/',
-    //     proxy: true // Can be also an object with default options
-    // },
-    // proxy: {
-    //     '/api/': {
-    //         target: 'http://0.0.0.0',
-    //         pathRewrite: {
-    //             '^/api/': ''
-    //         },
-    //         secure: false
-    //     }
-    // },
 })
 // module.exports = withCSS()
 
