@@ -8,6 +8,7 @@ import Head from '../components/head'
 import styles from '../static/css/Header.css'
 import cs from 'classnames/bind'
 import SecondMenuCell from '../components/SecondMenuCell'
+import axios from "axios/index";
 
 let cx = cs.bind(styles)
 
@@ -165,6 +166,16 @@ export default class Header extends Component {
         // 解决Router跳转之后不刷新。。。。。。
         Router.onRouteChangeStart = url => {location.href = url}
         // console.log(this.refs)
+        // 统一拦截https请求
+        axios.interceptors.request.use(function (config) {
+            // Do something before request is sent
+            config.url = '/api' + config.url
+            console.log('来了axios请求')
+            return config;
+        }, function (error) {
+            // Do something with request error
+            return Promise.reject(error);
+        });
     }
 
     componentWillUnmount() {

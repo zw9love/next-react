@@ -43,27 +43,27 @@ export default class Index extends Component {
         this.setState({borderWidth: width})
     }
 
-    static async getInitialProps () {
-        // eslint-disable-next-line no-undef
-        // const res = await fetch('https://api.github.com/repos/zeit/next.js')
-        // const json = await res.json()
-        // return { stars: json.stargazers_count }
-
-        // const {data} = await axios.get('https://min-api.cryptocompare.com/data/pricemultifull', {
-        //     params: {
-        //         fsyms: 'BTC,ETH,XRP,BCH,LTC,ADA,NEO,XLM,EOS,DASH,IOT,XMR,XEM,ETC,TRX,VEN,LSK,QTUM,BTG,USDT',
-        //         tsyms: 'USD'
-        //     }
-        // });
-
-        const {data} = await axios.get('/api/test.php', {});
-        return {}
-    }
+    // static async getInitialProps () {
+    //     // eslint-disable-next-line no-undef
+    //     // const res = await fetch('https://api.github.com/repos/zeit/next.js')
+    //     // const json = await res.json()
+    //     // return { stars: json.stargazers_count }
+    //
+    //     // const {data} = await axios.get('https://min-api.cryptocompare.com/data/pricemultifull', {
+    //     //     params: {
+    //     //         fsyms: 'BTC,ETH,XRP,BCH,LTC,ADA,NEO,XLM,EOS,DASH,IOT,XMR,XEM,ETC,TRX,VEN,LSK,QTUM,BTG,USDT',
+    //     //         tsyms: 'USD'
+    //     //     }
+    //     // });
+    //
+    //     const {data} = await axios.get('/test.php', {});
+    //     return {}
+    // }
 
 
     async componentDidMount() {
         this.renderData();
-        const {data} = await axios.get('/api/test.php', {})
+        const {data} = await axios.get('/test.php', {})
         console.log(data)
     }
 
