@@ -1,0 +1,20 @@
+{
+  "name": "create-next-example-app",
+  "scripts": {
+    "dev": "next -p 3333",
+    "build": "next build",
+    "start": "next start -p 3888",
+    "pm2": "pm2 start npm --name \"next\" -- run start",
+    "generate": "next generate",
+    "export": "next build && next export"
+  },
+  "dependencies": {
+    "@zeit/next-css": "^0.2.0",
+    "axios": "^0.18.0",
+    "classnames": "^2.2.6",
+    "cross-env": "^5.2.0",
+    "next": "^6.1.1",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  }
+}

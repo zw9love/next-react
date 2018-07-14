@@ -1,0 +1,355 @@
+div {
+    display: block;
+}
+
+.navigation{
+    color: white;
+    padding: 100px 0 0 0;
+    margin: 80px auto;
+    max-width: 1200px;
+}
+.Keyword{
+    display: table;
+}
+
+.h1{
+    color: white;
+}
+
+.label{
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #0a0a0a;
+}
+
+.libContainer {
+    width: 100%;
+    background-color: #edf0f4;
+    padding:180px 0;
+    overflow: hidden;
+}
+
+.libContainer > h1 {
+    font-size: 60px;
+    text-align: center;
+    margin: 100px 0 50px 0;
+}
+
+/*.libWrapper {*/
+    /*max-width: 1200px;*/
+    /*margin: 0 auto;*/
+    /*display: flex;*/
+    /*position: relative;*/
+    /*padding:0 10px*/
+/*}*/
+
+/*.libWrapper .libLeft {*/
+    /*width: 66.6666%;*/
+    /*padding: 0 20px 0 0*/
+/*}*/
+
+/*.libHoverCell {*/
+    /*position: relative;*/
+/*}*/
+
+/*.libLeftImage {*/
+    /*width: 100%;*/
+    /*vertical-align: middle;*/
+/*}*/
+
+/*.libLeftShadow {*/
+    /*position: absolute;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*left: 0;*/
+    /*top: 0;*/
+    /*background-color: rgba(66, 225, 250, .7);*/
+    /*transition: all 600ms ease;*/
+/*}*/
+
+/*.libRightTop {*/
+    /*position: absolute;*/
+    /*right: 10px;*/
+    /*top: 0;*/
+    /*width: 33.3333%;*/
+    /*!*height:100%;*!*/
+/*}*/
+
+/*.libRightBottom {*/
+    /*position: absolute;*/
+    /*right: 10px;*/
+    /*bottom: 0;*/
+    /*width: 33.3333%;*/
+    /*!*height:100%;*!*/
+/*}*/
+
+/*.libHoverCell:hover .libLeftShadow {*/
+    /*background-color: rgba(66, 225, 250, .0);*/
+/*}*/
+
+/*.libInfoWrapper {*/
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*bottom: 0;*/
+    /*background-color: #fff;*/
+    /*padding: 30px*/
+/*}*/
+
+/*.libInfoWrapper > p {*/
+    /*color: #247ae2;*/
+    /*padding: 20px 0;*/
+    /*font-weight: 600;*/
+/*}*/
+
+/*.libInfoWrapper > h1 {*/
+    /*line-height: 40px;*/
+    /*margin-bottom: 20px;*/
+/*}*/
+
+/*.libInfoWrapper > h2 {*/
+    /*line-height: 30px;*/
+    /*margin-bottom: 20px;*/
+/*}*/
+
+/*.libInfoLeft {*/
+    /*width: calc(100% - 100px);*/
+/*}*/
+
+/*.libInfoRight {*/
+    /*width: calc(100% - 30px);*/
+    /*padding: 0 0 20px 20px;*/
+/*}*/
+
+/*.bottomBtnWrapper {*/
+    /*margin: 80px auto;*/
+    /*max-width: 1200px;*/
+    /*position: relative;*/
+/*}*/
+
+/*.bottomBtnLine {*/
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*transform: translateY(-50%);*/
+    /*width: calc(50% - 130px);*/
+    /*height: 1px;*/
+    /*background-color: #ccc;*/
+/*}*/
+
+/*.bottomBtnLeftLine {*/
+    /*left: 0;*/
+/*}*/
+
+/*.bottomBtnRightLine {*/
+    /*right: 0;*/
+/*}*/
+
+section {
+    position: relative;
+}
+
+.filters{
+    background: #247ae2;
+    height: 72px;
+}
+
+.filter-bar {
+    max-width: 1568px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 72px;
+}
+
+.filter-buttons {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+
+.filter-buttons li {
+    display: list-item;
+    float: left;
+    font-size: 1.4em;
+    line-height: 72px;
+    font-weight: 400;
+    color: #424242;
+    width: 25%;
+    text-align: center;
+}
+
+.filter-buttons a {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    height: 72px;
+    width: 100%;
+}
+
+.filter-buttons li span {
+    display: inline-block;
+    /* width: 100%; */
+}
+
+.qt-body {
+    min-height: 400px;
+}
+
+.news {
+    padding-top: 10px;
+}
+
+.news-container {
+    max-width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.news-list {
+    border-bottom: 1px solid #e3e3e3;
+    padding: 54px 32px;
+    position: relative;
+}
+
+.news-logo {
+    position: absolute;
+    width: 143px;
+    text-align: center;
+    /* float: left; */
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.news-logo img {
+    max-width: 143px;
+}
+
+.news-text {
+    margin-left: 263px;
+}
+
+.news-content, .news-title {
+    font-size: 1.2em;
+    line-height: 24px;
+}
+
+.news-text h2 {
+    font-weight: normal;
+    display: block;
+    font-family: 宋体;
+}
+
+.news-title {
+    margin-top: 20px;
+}
+
+.news-title a {
+    text-decoration: none;
+    /*color: #202020;*/
+}
+
+
+
+
+/*.pressContainer {*/
+    /*width: 100%;*/
+    /*background-color: #edf0f4;*/
+    /*padding:50px 0;*/
+    /*overflow: hidden;*/
+/*}*/
+
+/*.pressContainer > h1 {*/
+    /*font-size: 60px;*/
+    /*text-align: center;*/
+    /*margin: 100px 0 50px 0;*/
+/*}*/
+
+/*.pressWrapper {*/
+    /*max-width: 1200px;*/
+    /*margin: 0 auto;*/
+    /*display: flex;*/
+    /*position: relative;*/
+    /*padding:0 10px*/
+/*}*/
+
+/*.pressWrapper .pressLeft {*/
+    /*width: 66.6666%;*/
+    /*padding: 0 20px 0 0*/
+/*}*/
+
+/*.press{*/
+    /*position: relative;*/
+    /*right: 10px;*/
+    /*top: 0;*/
+    /*width: calc(33.33333% - 1.25rem);*/
+    /*justify-content: flex-start;*/
+    /*display: flex;*/
+    /*background-color: #fff;*/
+    /*margin: 25px;*/
+/*}*/
+
+/*.pressHoverCell {*/
+    /*position: relative;*/
+/*}*/
+/*.pressImage {*/
+    /*position: relative;*/
+    /*width: 100%;*/
+    /*vertical-align: middle;*/
+/*}*/
+
+/*.pressShadow {*/
+    /*position: absolute;*/
+    /*width: 100%;*/
+    /*height: 80%;*/
+    /*left: 0;*/
+    /*top: 0;*/
+    /*background-color: rgba(66, 225, 250, .7);*/
+    /*transition: all 600ms ease;*/
+/*}*/
+
+/*.pressHoverCell:hover .pressShadow{*/
+    /*background-color: rgba(66, 225, 250, .0);*/
+/*}*/
+
+/*.pressInfo {*/
+    /*position: relative;*/
+    /*width: auto;*/
+    /*margin-right: 20px;*/
+    /*padding: 1.75em 1.625em;*/
+    /*left: 0;*/
+    /*bottom: 0;*/
+    /*background-color: #fff;*/
+/*}*/
+
+/*.pressInfo > p {*/
+    /*color: #247ae2;*/
+    /*padding: 20px 0;*/
+    /*font-weight: 600;*/
+/*}*/
+
+/*.pressInfo > h1 {*/
+    /*font-size: 18px;*/
+    /*line-height: 40px;*/
+    /*margin-bottom: 20px;*/
+/*}*/
+
+/*.pressInfo > h2 {*/
+    /*font-size: 15px;*/
+    /*line-height: 30px;*/
+    /*margin-bottom: 20px;*/
+/*}*/
+
+/*.pressInfoRight {*/
+    /*width: calc(100% - 30px);*/
+    /*padding: 0 0 20px 20px;*/
+/*}*/
+
+
+

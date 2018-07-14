@@ -1,0 +1,27 @@
+.secondMenuCell{
+    color:#000;
+    /*transition:all 300ms ease;*/
+    padding:10px 0;
+}
+
+.secondMenuCell span{
+    color:#000;
+    transition:all 300ms ease;
+}
+
+.secondMenuCell span:hover{
+    color:#fc6215;
+}
+
+.secondMenuCell span:hover+svg{
+    margin-left:15px;
+}
+
+.secondMenuCell svg{
+    margin-left:10px;
+    transition:all 300ms ease;
+}
+
+.secondMenuCell svg path{
+    fill:#fc6215;
+}
