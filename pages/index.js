@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import axios from 'axios';
+import {connect} from 'react-redux'
+import { incrementCount, decrementCount, resetCount } from '../store'
 import Router from 'next/router'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -12,7 +14,7 @@ import styles from '../static/css/Home.css'
 import cs from 'classnames/bind'
 let cx = cs.bind(styles)
 
-export default class Index extends Component {
+class Index extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -60,11 +62,18 @@ export default class Index extends Component {
     //     return {}
     // }
 
+    static getInitialProps ({ store, req }) {
+        // console.log(store)
+        // console.log(111222333)
+        // console.log(req)
+        return {}
+    }
 
     async componentDidMount() {
         this.renderData();
-        const {data} = await axios.get('/test.php', {})
-        console.log(data)
+        // const {data} = await axios.get('/test.php', {})
+        // console.log(data)
+        console.log(this.props)
     }
 
     renderData() {
@@ -154,11 +163,18 @@ export default class Index extends Component {
         return arr;
     }
 
+    add(){
+        this.props.dispatch(incrementCount())
+    }
+
+
     render(){
         return (
             <div>
                 {/*<Head title="零平数据" />*/}
-                <Header />
+                <h1>{this.props.count}</h1>
+                <button onClick={this.add.bind(this)}>+1</button>
+                {/*<Header />*/}
                 <div className={cx('container')} style={{backgroundImage: `url('../static/img/header_bg1.jpg')`, backgroundSize: 'cover'}}>
                     <div className={styles.wrapper}>
                         <h1>零平数据</h1>
@@ -381,4 +397,10 @@ export default class Index extends Component {
 //     `}</style>
 //   </div>
 // )
+
+function mapStateToProps (state) {
+    return state
+}
+
+export default connect(mapStateToProps)(Index)
 
