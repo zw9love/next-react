@@ -71,8 +71,8 @@ class Index extends Component {
 
     async componentDidMount() {
         this.renderData();
-        // const {data} = await axios.get('/test.php', {})
-        // console.log(data)
+        const {data} = await axios.get('/test.php', {})
+        console.log(data)
         console.log(this.props)
     }
 
@@ -171,10 +171,9 @@ class Index extends Component {
     render(){
         return (
             <div>
-                {/*<Head title="零平数据" />*/}
-                <h1>{this.props.count}</h1>
-                <button onClick={this.add.bind(this)}>+1</button>
-                {/*<Header />*/}
+                {/*<h1>{this.props.count}</h1>*/}
+                {/*<button onClick={this.add.bind(this)}>+1</button>*/}
+                <Header />
                 <div className={cx('container')} style={{backgroundImage: `url('../static/img/header_bg1.jpg')`, backgroundSize: 'cover'}}>
                     <div className={styles.wrapper}>
                         <h1>零平数据</h1>

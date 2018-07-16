@@ -7,8 +7,8 @@
     "pm2": "pm2 start npm --name \"next\" -- run start",
     "generate": "next generate",
     "export": "next build && next export",
-    "node-dev": "node server.js",
-    "node-start": "cross-env NODE_ENV=production PORT=3000 node server.js"
+    "node-dev": "cross-env PORT=3333 node server.js",
+    "node-start": "cross-env NODE_ENV=production PORT=3888 node server.js"
   },
   "dependencies": {
     "@zeit/next-css": "^0.2.0",

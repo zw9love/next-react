@@ -169,7 +169,8 @@ export default class Header extends Component {
         // 统一拦截https请求
         axios.interceptors.request.use(function (config) {
             // Do something before request is sent
-            config.url = '/api' + config.url
+            // config.url = '/api' + config.url
+            config.url = 'http://localhost' + config.url  // 需要后台设置  header("Access-Control-Allow-Origin:*")
             console.log('来了axios请求')
             return config;
         }, function (error) {

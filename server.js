@@ -39,14 +39,16 @@
 const express = require('express')
 const next = require('next')
 
-const devProxy = {
-    '/api': {
-        target: 'http://0.0.0.0/',
-        pathRewrite: {'^/api': '/'},
-        changeOrigin: true,
-        secure: false
-    }
-}
+// const devProxy = {
+//     '/api': {
+//         target: 'http://0.0.0.0/',
+//         pathRewrite: {'^/api': '/'},
+//         changeOrigin: true,
+//         secure: false
+//     }
+// }
+
+const devProxy = ''
 
 const port = parseInt(process.env.PORT, 10) || 3000
 const env = process.env.NODE_ENV
